@@ -15,6 +15,8 @@
 #ifndef __ASM_JZ4770_IRQ_H__
 #define __ASM_JZ4770_IRQ_H__
 
+#define MIPS_CPU_IRQ_BASE 0
+
 /* we need 256 irq levels at least */
 #define NR_IRQS	384
 
