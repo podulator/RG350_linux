@@ -6,7 +6,7 @@
 - clone [the buildroot container](https://github.com/podulator/RG350_buildroot)
 - run the container in the root of this repo
 - make ARCH=mips rg350_defconfig
-- make ARCH=mips CROSS_COMPILE=mipsel-linux-
+- make ARCH=mips CROSS_COMPILE=mipsel-linux- vmlinuz.bin
 
 ## What's the difference?
 
@@ -14,9 +14,6 @@
 wget https://mirrors.edge.kernel.org/pub/linux/kernel/projects/rt/3.12/older/patch-3.12.0-rt2.patch.bz2
 bzip2 -d patch-3.12.0-rt2.patch.bz2 
 patch -p1 <patch-3.12.0-rt2.patch
-
-make ARCH=mips rg350_defconfig
-make ARCH=mips CROSS_COMPILE=mipsel-linux-
 
 ------------
 
